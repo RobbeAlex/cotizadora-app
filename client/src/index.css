@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ——— COTIZAOBRA — Terracota/Naranja + Gris oscuro ——— */
+:root {
+  /* Background / Surface */
+  --background: 30 15% 97%;
+  --foreground: 20 15% 12%;
+  --card: 30 20% 99%;
+  --card-foreground: 20 15% 12%;
+  --popover: 30 20% 99%;
+  --popover-foreground: 20 15% 12%;
+
+  /* Primary — Terracota cálido */
+  --primary: 18 75% 44%;
+  --primary-foreground: 30 100% 98%;
+
+  /* Secondary */
+  --secondary: 30 20% 92%;
+  --secondary-foreground: 20 15% 20%;
+
+  /* Muted */
+  --muted: 30 12% 92%;
+  --muted-foreground: 20 8% 46%;
+
+  /* Accent */
+  --accent: 25 90% 55%;
+  --accent-foreground: 30 100% 98%;
+
+  /* Destructive */
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 30 100% 98%;
+
+  /* Borders */
+  --border: 30 12% 85%;
+  --input: 30 12% 85%;
+  --ring: 18 75% 44%;
+
+  /* Radius */
+  --radius: 0.5rem;
+
+  /* Chart colors */
+  --chart-1: 18 75% 44%;
+  --chart-2: 25 90% 55%;
+  --chart-3: 35 80% 50%;
+  --chart-4: 205 65% 45%;
+  --chart-5: 145 55% 40%;
+
+  /* Custom */
+  --font-display: 'Cabinet Grotesk', 'Helvetica Neue', sans-serif;
+  --font-body: 'Satoshi', 'Inter', sans-serif;
+}
+
+.dark {
+  --background: 20 12% 8%;
+  --foreground: 30 10% 88%;
+  --card: 20 12% 10%;
+  --card-foreground: 30 10% 88%;
+  --popover: 20 12% 10%;
+  --popover-foreground: 30 10% 88%;
+
+  --primary: 18 70% 55%;
+  --primary-foreground: 20 12% 8%;
+
+  --secondary: 20 10% 16%;
+  --secondary-foreground: 30 8% 75%;
+
+  --muted: 20 10% 14%;
+  --muted-foreground: 30 6% 56%;
+
+  --accent: 25 85% 60%;
+  --accent-foreground: 20 12% 8%;
+
+  --destructive: 0 62% 50%;
+  --destructive-foreground: 30 100% 98%;
+
+  --border: 20 8% 20%;
+  --input: 20 8% 20%;
+  --ring: 18 70% 55%;
+
+  --chart-1: 18 70% 55%;
+  --chart-2: 25 85% 60%;
+  --chart-3: 35 75% 55%;
+  --chart-4: 205 60% 55%;
+  --chart-5: 145 50% 48%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100dvh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  line-height: 1.15;
+}
+
+input, button, select, textarea {
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
