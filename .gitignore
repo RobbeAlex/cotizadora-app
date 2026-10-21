@@ -1,5 +1,27 @@
+# Dependencias Node.js y Empaquetado
 node_modules/
-.env
-data.db
 dist/
 .vite/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Base de datos SQLite local
+data.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Caché y compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+*.log
